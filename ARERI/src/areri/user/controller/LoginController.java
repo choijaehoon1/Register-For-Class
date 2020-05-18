@@ -75,7 +75,7 @@ public class LoginController implements Initializable {
 	StudentVO vo;
 	UserDao dao;
 	public static List<StudentVO> studentList;
-	public static final String FILE_PATH = "D:\\HR_20191130\\04_SPRING\\workspace\\ARERI\\studentList.csv";
+	public static final String FILE_PATH = "C:\\Users\\sist\\git\\Register-For-Class\\ARERI\\studentList.csv";
 	public static String engProp="src/areri/user/controller/eng_prop.properties";
 	public static String korProp="src/areri/user/controller/kor_prop.properties";
 	

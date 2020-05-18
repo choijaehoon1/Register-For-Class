@@ -51,7 +51,7 @@ import javafx.collections.ObservableList;
 public class LectureAdminDao implements WorkDiv {
 	
 	public static List<LectureVO> lecture = new ArrayList<LectureVO>();
-	public static final String FILE_PATH="D:\\HR_20191130\\04_SPRING\\workspace\\ARERI\\lecture.csv";
+	public static final String FILE_PATH="C:\\Users\\sist\\git\\Register-For-Class\\ARERI\\lecture.csv";
 	public static ObservableList  lectureTableViewList=FXCollections.observableArrayList();
 
 	//public String studentID ="999999999";

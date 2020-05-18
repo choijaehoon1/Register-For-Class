@@ -54,9 +54,9 @@ public class UserPageDao2 implements WorkDiv{
 
 	private List<PutLectureVO> putlecture = new ArrayList<PutLectureVO>();
 	private List<CompleteLectureVO> completelecture = new ArrayList<CompleteLectureVO>();
-	private final String PUTLECTURE_FILE = "D:\\HR_20191130\\04_SPRING\\workspace\\ARERI\\putlecture.csv";
-	private final String LECTURE_FILE = "D:\\HR_20191130\\04_SPRING\\workspace\\ARERI\\lecture.csv";
-	private final String COMPLETELECTURE_FILE = "D:\\HR_20191130\\04_SPRING\\workspace\\ARERI\\completelecture.csv";
+	private final String PUTLECTURE_FILE = "C:\\Users\\sist\\git\\Register-For-Class\\ARERI\\putlecture.csv";
+	private final String LECTURE_FILE = "C:\\Users\\sist\\git\\Register-For-Class\\ARERI\\lecture.csv";
+	private final String COMPLETELECTURE_FILE = "C:\\Users\\sist\\git\\Register-For-Class\\ARERI\\completelecture.csv";
 	
 	@SuppressWarnings("unchecked")
 	public UserPageDao2() {

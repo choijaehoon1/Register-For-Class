@@ -60,7 +60,7 @@ public class LectureDao implements WorkDiv,Comparator<LectureVO>{
 	private List<LectrueFxVO> lectureBook = new ArrayList<LectrueFxVO>();
 	/**전체강의정보 csv파일*/
 	//private final String ADD_FILE = "src\\areri\\lecture\\dao\\lecture.csv";
-	private final String ADD_FILE = "D:\\HR_20191130\\04_SPRING\\workspace\\ARERI\\lecture.csv";
+	private final String ADD_FILE = "C:\\Users\\sist\\git\\Register-For-Class\\ARERI\\lecture.csv";
 	/**개별 사용자 아이디*/
 	public String student_ID = LoginController.studentID;
 	//public String student_ID ="201922456";//임시 학번

@@ -37,7 +37,7 @@ public class Const {
 	//File -> List
 	public static List<StudentVO> studentList = new ArrayList();
 	//FileSave Path
-	public static final String FILE_PATH="D:\\HR_20191130\\04_SPRING\\workspace\\ARERI\\studentList.csv";
+	public static final String FILE_PATH="C:\\Users\\sist\\git\\Register-For-Class\\ARERI\\studentList.csv";
 	//TableView Data
 	public static ObservableList StudentTableViewList = FXCollections.observableArrayList();
 	
