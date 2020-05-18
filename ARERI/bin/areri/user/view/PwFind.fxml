@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="252.0" prefWidth="341.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="areri.user.controller.PwFindController">
+   <children>
+      <Label fx:id="labelId" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="102.0" prefWidth="115.0" text="학번">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="142.0" prefWidth="115.0" text="Email">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pwFindId" layoutX="159.0" layoutY="98.0" prefHeight="28.0" prefWidth="158.0" />
+      <TextField fx:id="pwFindEmail" layoutX="159.0" layoutY="138.0" prefHeight="28.0" prefWidth="158.0" />
+      <ImageView fitHeight="41.0" fitWidth="127.0" layoutX="5.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/login/대학%20로고.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="39.0" text="Pw찾기">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="TOP_RIGHT" layoutX="208.0" layoutY="5.0" prefHeight="28.0" prefWidth="128.0" spacing="2.0">
+         <children>
+            <Button fx:id="koreanBtn" mnemonicParsing="false" text="한국어" />
+            <Button fx:id="englishBtn" mnemonicParsing="false" prefHeight="23.0" prefWidth="52.0" text="ENG" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="75.0" layoutY="184.0" prefHeight="68.0" prefWidth="200.0" spacing="35.0">
+         <children>
+            <Button fx:id="pwFindCheckBtn" mnemonicParsing="false" prefHeight="26.0" prefWidth="62.0" text="확인">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="pwFindCancelBtn" mnemonicParsing="false" onAction="#pwfindCancel01" prefHeight="26.0" prefWidth="62.0" text="취소">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

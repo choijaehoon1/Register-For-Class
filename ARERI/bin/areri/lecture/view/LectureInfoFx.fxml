@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="428.0" prefWidth="472.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="areri.lecture.controller.LectureInfoFxController">
+   <children>
+      <Label alignment="CENTER" layoutX="22.0" layoutY="44.0" prefHeight="44.0" prefWidth="115.0" text="강의정보">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="107.0" prefHeight="34.0" prefWidth="88.0" text="강의계획서">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="lecturePlan" editable="false" layoutX="29.0" layoutY="141.0" prefHeight="218.0" prefWidth="414.0" wrapText="true">
+         <font>
+            <Font size="17.0" />
+         </font></TextArea>
+      <Button fx:id="exitBtn" layoutX="206.0" layoutY="375.0" mnemonicParsing="false" onAction="#handlerExitAction" prefHeight="34.0" prefWidth="61.0" text="닫기" />
+      <ImageView fitHeight="41.0" fitWidth="127.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/login/대학%20로고.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="279.0" layoutY="56.0" prefHeight="89.0" prefWidth="164.0" spacing="8.0">
+         <children>
+            <Text fx:id="lectureName" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="164.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="professorClass" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="164.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="lectureDay" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="164.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

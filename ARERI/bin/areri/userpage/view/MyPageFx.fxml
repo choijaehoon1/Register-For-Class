@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="areri.userpage.controller.MypageController">
+   <children>
+      <Text fx:id="studentId" layoutX="108.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="131.00002706050873">
+         <font>
+            <Font size="19.0" />
+         </font></Text>
+      <Text fx:id="studentName" layoutX="239.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="63.99998068809509">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Label layoutX="303.0" layoutY="35.0" prefHeight="32.0" prefWidth="27.0" text="님">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TableView fx:id="myLectureView" layoutX="112.0" layoutY="140.0" prefHeight="260.0" prefWidth="1075.0">
+        <columns>
+          <TableColumn prefWidth="100.00003051757812" text="강의코드" />
+          <TableColumn prefWidth="272.0" text="강의명" />
+            <TableColumn prefWidth="121.0" text="교수명" />
+            <TableColumn minWidth="6.0" prefWidth="108.0" text="요일" />
+            <TableColumn prefWidth="110.0" text="시작시간" />
+            <TableColumn prefWidth="122.0" text="끝시간" />
+            <TableColumn prefWidth="143.0" text="강의실" />
+            <TableColumn prefWidth="99.0" text="신청인원" />
+        </columns>
+      </TableView>
+      <Button fx:id="selectPutLecture" layoutX="1065.0" layoutY="86.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="122.0" text="수강신청">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button fx:id="deletePutLecture" layoutX="112.0" layoutY="86.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="122.0" text="장바구니 삭제">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <TableView fx:id="completeLecture" layoutX="113.0" layoutY="487.0" prefHeight="260.0" prefWidth="1075.0">
+        <columns>
+            <TableColumn prefWidth="100.00003051757812" text="강의코드" />
+            <TableColumn prefWidth="272.0" text="강의명" />
+            <TableColumn prefWidth="121.0" text="교수명" />
+            <TableColumn minWidth="6.0" prefWidth="108.0" text="요일" />
+            <TableColumn prefWidth="110.0" text="시작시간" />
+            <TableColumn prefWidth="122.0" text="끝시간" />
+            <TableColumn prefWidth="143.0" text="강의실" />
+            <TableColumn prefWidth="99.0" text="신청인원" />
+        </columns>
+      </TableView>
+      <Button fx:id="timeTable" layoutX="112.0" layoutY="432.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="122.0" text="내 시간표">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button fx:id="deleteCompleteLecture" layoutX="1065.0" layoutY="432.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="122.0" text="수강취소">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <ImageView fitHeight="88.0" fitWidth="267.0" layoutX="526.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/login/대학%20로고.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="109.0" layoutY="59.0" prefHeight="16.0" prefWidth="128.0" />
+      <HBox alignment="TOP_RIGHT" layoutX="988.0" layoutY="30.0" prefHeight="46.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button fx:id="lecture" mnemonicParsing="false" prefHeight="34.0" prefWidth="76.0" text="강의조회" />
+            <Button fx:id="logoutBtn" mnemonicParsing="false" prefHeight="34.0" prefWidth="76.0" text="로그아웃" />
+         </children>
+      </HBox>
+      <HBox layoutX="330.0" layoutY="37.0" prefHeight="34.0" prefWidth="186.0" spacing="10.0">
+         <children>
+            <Button fx:id="userInfo" mnemonicParsing="false" prefHeight="28.0" prefWidth="85.0" text="내정보수정" />
+            <Button fx:id="userInfo1" mnemonicParsing="false" prefHeight="28.0" prefWidth="85.0" text="내 정보 조회" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

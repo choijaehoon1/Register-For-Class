@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="548.0" prefWidth="841.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="areri.user.controller.MainPageController">
+   <children>
+      <Button fx:id="MyPageBtn" contentDisplay="CENTER" layoutX="155.0" layoutY="323.0" mnemonicParsing="false" prefHeight="122.0" prefWidth="533.0" text="MyPage로 이동 →">
+         <font>
+            <Font name="MS Reference Sans Serif" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="MainBtn" contentDisplay="CENTER" layoutX="155.0" layoutY="161.0" mnemonicParsing="false" prefHeight="122.0" prefWidth="533.0" text="강의조회 Page로 이동 →">
+         <font>
+            <Font name="MS Reference Sans Serif" size="22.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="84.0" fitWidth="222.0" layoutX="310.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/login/대학%20로고.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="stuId" layoutX="29.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20202288" textAlignment="CENTER" wrappingWidth="118.12109375">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Label layoutX="218.0" layoutY="35.0" text="님, 환영합니다!">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="24.0" layoutY="50.0" prefHeight="16.0" prefWidth="128.0" />
+      <Text fx:id="stuName" layoutX="155.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="61.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

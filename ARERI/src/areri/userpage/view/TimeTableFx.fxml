@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="areri.userpage.controller.TimeTableController">
+   <children>
+      <Button fx:id="close" layoutX="268.0" layoutY="555.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="64.0" text="닫기" />
+      <GridPane fx:id="timeTable" alignment="TOP_CENTER" layoutX="48.0" layoutY="47.0" prefHeight="480.0" prefWidth="504.0">
+        <columnConstraints>
+          <ColumnConstraints />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="79.0" minWidth="10.0" prefWidth="74.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="94.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="48.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="48.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="월" GridPane.columnIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="화" GridPane.columnIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="수" GridPane.columnIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="목" GridPane.columnIndex="5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="금" GridPane.columnIndex="6">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="48.0" prefWidth="49.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <children>
+                  <Label text="09:00      " />
+                  <Label text="   ~10:00" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="48.0" prefWidth="49.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Label text="10:00      " />
+                  <Label text="   ~11:00" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="48.0" prefWidth="49.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Label text="11:00      " />
+                  <Label text="   ~12:00" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="48.0" prefWidth="49.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <Label text="12:00      " />
+                  <Label text="   ~13:00" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="48.0" prefWidth="49.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <children>
+                  <Label text="13:00      " />
+                  <Label text="   ~14:00" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="48.0" prefWidth="49.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <children>
+                  <Label text="14:00      " />
+                  <Label text="   ~15:00" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="48.0" prefWidth="49.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <children>
+                  <Label text="15:00      " />
+                  <Label text="   ~16:00" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="48.0" prefWidth="49.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <children>
+                  <Label text="16:00      " />
+                  <Label text="   ~17:00" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="48.0" prefWidth="49.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <children>
+                  <Label text="17:00      " />
+                  <Label text="   ~18:00" />
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+      <ImageView fitHeight="41.0" fitWidth="127.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/login/대학%20로고.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,96 @@
+
+Button{
+    -fx-font-size:12px;
+    -fx-font-weight:bold;
+    -fx-text-fill:black; 
+    -fx-font-family:"Arial Narrow";
+    -fx-background-color:#DCDCDC;
+}
+
+Button:hover{
+    -fx-background-color: #D0D0D0;
+    -fx-text-fill: white;
+}
+
+#loginBtn{
+    -fx-font-size:12px;
+    -fx-font-weight:bold;
+    -fx-text-fill:white; 
+    -fx-font-family:"Arial Narrow";
+    -fx-background-color:#C91D1D;
+}
+
+#loginBtn:hover{
+    -fx-font-size:12px;
+    -fx-font-weight:bold;
+    -fx-text-fill:white; 
+    -fx-font-family:"Arial Narrow";
+    -fx-background-color:#E60000;
+}
+
+#MyPageBtn{
+    -fx-font-size:25px;
+    -fx-font-weight:bold;
+    -fx-text-fill:white; 
+    -fx-font-family:"Arial Narrow";
+    -fx-background-color:#A9A9A9;
+}
+
+#MyPageBtn:hover{
+    -fx-font-size:25px;
+    -fx-font-weight:bold;
+    -fx-text-fill:white; 
+    -fx-font-family:"Arial Narrow";
+    -fx-background-color:#C91D1D;
+}
+
+#MainBtn{
+    -fx-font-size:25px;
+    -fx-font-weight:bold;
+    -fx-text-fill:white; 
+    -fx-font-family:"Arial Narrow";
+    -fx-background-color:#A9A9A9;
+}
+
+#MainBtn:hover{
+    -fx-font-size:25px;
+    -fx-font-weight:bold;
+    -fx-text-fill:white; 
+    -fx-font-family:"Arial Narrow";
+    -fx-background-color:#C91D1D;
+}
+
+#deletePutLecture{
+    -fx-font-size:15px; 
+}
+
+#selectPutLecture,#deleteCompleteLecture,#timeTable{
+   -fx-font-size:17px; 
+}
+
+#joinInfo,#saveBtn,#joinChart{
+   -fx-font-size:17px;  
+}
+
+#openBtn,#modBtn,#delBtn{
+   -fx-font-size:17px;  
+}
+
+#selectPutLecture:hover{
+    -fx-font-size:17px;
+    -fx-background-color:#C91D1D;
+}
+
+#deleteCompleteLecture:hover{
+    -fx-font-size:17px;
+    -fx-background-color:#C91D1D;
+}
+
+TableView .column-header .label {
+    -fx-text-fill:white; 
+    -fx-background-color: #BE2D20;
+}
+
+
+
+

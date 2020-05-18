@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="285.0" prefWidth="393.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="areri.user.controller.LoginController">
+   <children>
+      <Label fx:id="labelId" alignment="CENTER" layoutX="7.0" layoutY="118.0" prefWidth="136.0" text="학번">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextField fx:id="loginId" layoutX="125.0" layoutY="114.0" prefHeight="28.0" prefWidth="158.0" />
+      <Label fx:id="labelPw" alignment="CENTER" layoutX="7.0" layoutY="172.0" prefWidth="136.0" text="비밀번호">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="loginPw" layoutX="125.0" layoutY="167.0" prefHeight="28.0" prefWidth="158.0">
+         <font>
+            <Font name="MS Reference Sans Serif" size="15.0" />
+         </font></PasswordField>
+      <Button fx:id="loginBtn" layoutX="296.0" layoutY="128.0" mnemonicParsing="false" onAction="#login01" prefHeight="54.0" prefWidth="55.0" text="LogIn">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="97.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/login/대학%20로고.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" layoutX="99.0" layoutY="216.0" prefHeight="48.0" prefWidth="200.0" spacing="35.0">
+         <children>
+            <Button fx:id="joinBtn" mnemonicParsing="false" onAction="#join01" prefHeight="26.0" prefWidth="72.0" text="회원가입">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="pwfindBtn" mnemonicParsing="false" onAction="#pwfind01" prefHeight="26.0" prefWidth="72.0" text="PW찾기">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" layoutX="250.0" layoutY="8.0" prefHeight="37.0" prefWidth="136.0" spacing="2.0">
+         <children>
+            <Button fx:id="koreanBtn" mnemonicParsing="false" prefHeight="23.0" prefWidth="52.0" text="한국어" />
+            <Button fx:id="englishBtn" mnemonicParsing="false" prefHeight="23.0" prefWidth="52.0" text="ENG" />
+         </children>
+      </HBox> 
+   </children>
+</AnchorPane>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="areri.admin.controller.AdminSearchFxController">
+   <children>
+      <Separator layoutX="109.0" layoutY="59.0" prefHeight="16.0" prefWidth="103.0" />
+      <Label layoutX="222.0" layoutY="35.0" prefHeight="34.0" prefWidth="150.0" text="페이지입니다.">
+      
+         <font>
+            <Font size="18.0" />
+         </font></Label>    
+      <Text fx:id="userId" fill="TRANSPARENT" layoutX="110.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="130.99998831748962">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableView" layoutX="113.0" layoutY="227.0" prefHeight="528.0" prefWidth="1075.0">
+        <columns>
+          <TableColumn prefWidth="138.0" text="강의코드" />
+          <TableColumn prefWidth="176.0" text="강의명" />
+            <TableColumn prefWidth="138.0" text="교수명" />
+            <TableColumn minWidth="6.0" prefWidth="105.0" text="요일" />
+            <TableColumn prefWidth="125.0" text="시작시간" />
+            <TableColumn prefWidth="120.0" text="끝시간" />
+            <TableColumn prefWidth="140.0" text="강의실" />
+            <TableColumn prefWidth="132.0" text="신청인원" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="selectCombo" layoutX="113.0" layoutY="86.0" prefHeight="28.0" prefWidth="150.0" >
+      </ComboBox>
+      <ComboBox fx:id="selectSearchCombo" layoutX="778.0" layoutY="86.0" prefHeight="28.0" prefWidth="177.0" promptText="검색기준을 선택하세요.">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="강의코드" />
+                <String fx:value="강의명" />
+                <String fx:value="요일" />    
+            </FXCollections>
+        </items>
+      </ComboBox>
+      <TextField fx:id="txtBox" layoutX="955.0" layoutY="86.0" prefHeight="28.0" prefWidth="169.0" />
+      <Button fx:id="searchBtn" layoutX="1124.0" layoutY="86.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="64.0" text="검색" />
+      <HBox alignment="CENTER_RIGHT" layoutX="717.0" layoutY="159.0" prefHeight="59.0" prefWidth="471.0" spacing="10.0">
+         <children>
+            <Button fx:id="openBtn" mnemonicParsing="false" onAction="#openBtn" prefHeight="46.0" prefWidth="130.0" text="강의개설">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="modBtn" lineSpacing="10.0" mnemonicParsing="false" onAction="#modBtn" prefHeight="46.0" prefWidth="130.0" text="강의수정">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="delBtn" mnemonicParsing="false" onAction="#delBtn" prefHeight="46.0" prefWidth="130.0" text="강의삭제">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </opaqueInsets>
+      </HBox>
+      <Button fx:id="saveBtn" layoutX="263.0" layoutY="86.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="64.0" text="조회" />
+      <Text layoutX="120.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="관리자" textAlignment="CENTER" wrappingWidth="81.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="88.0" fitWidth="267.0" layoutX="527.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../bin/image/login/대학%20로고.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logoutBtn" layoutX="1112.0" layoutY="31.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="76.0" text="로그아웃" />
+   </children>
+   <opaqueInsets>
+      <Insets left="10.0" />
+   </opaqueInsets>
+</AnchorPane>

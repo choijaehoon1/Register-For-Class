@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="414.0" prefWidth="452.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="areri.user.controller.JoinController">
+   <children>
+      <Label fx:id="labelId" alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="110.0" prefWidth="136.0" text="학번">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPw" alignment="CENTER" layoutX="33.0" layoutY="152.0" prefWidth="136.0" text="비밀번호">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPwCheck" alignment="CENTER" layoutX="34.0" layoutY="221.0" prefHeight="21.0" prefWidth="136.0" text="비밀번호 확인">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelName" alignment="CENTER" layoutX="33.0" layoutY="263.0" prefWidth="136.0" text="이름">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="80.0" layoutY="305.0" text="Email">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="joinId" layoutX="178.0" layoutY="106.0" prefHeight="29.0" prefWidth="223.0" />
+      <TextField fx:id="joinName" layoutX="178.0" layoutY="259.0" prefHeight="29.0" prefWidth="223.0" />
+      <TextField fx:id="joinEmail" layoutX="178.0" layoutY="300.0" prefHeight="29.0" prefWidth="223.0" />
+      <PasswordField fx:id="joinPw" layoutX="178.0" layoutY="148.0" prefHeight="29.0" prefWidth="223.0">
+         <font>
+            <Font name="MS Reference Sans Serif" size="15.0" />
+         </font></PasswordField>
+      <PasswordField fx:id="joinPwCheck" layoutX="178.0" layoutY="217.0" prefHeight="29.0" prefWidth="223.0">
+         <font>
+            <Font name="MS Reference Sans Serif" size="15.0" />
+         </font></PasswordField>
+      <ImageView fitHeight="47.0" fitWidth="128.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/login/대학%20로고.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="17.0" layoutY="47.0" text="회원가입">
+         <font>
+            <Font name="Microsoft Sans Serif" size="27.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="136.0" layoutY="335.0" prefHeight="80.0" prefWidth="200.0" spacing="35.0">
+         <children>
+            <Button fx:id="joinCheckBtn" mnemonicParsing="false" prefHeight="26.0" prefWidth="62.0" text="확인">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="joinCancelBtn" mnemonicParsing="false" onAction="#joinCancel01" prefHeight="26.0" prefWidth="62.0" text="취소">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" layoutX="295.0" layoutY="7.0" prefHeight="47.0" prefWidth="149.0" spacing="2.0">
+         <children>
+            <Button fx:id="koreanBtn" mnemonicParsing="false" text="한국어" />
+            <Button fx:id="englishBtn" mnemonicParsing="false" prefHeight="23.0" prefWidth="52.0" text="ENG" />
+         </children>
+      </HBox>
+      <Text fx:id="pwTxt" layoutX="179.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

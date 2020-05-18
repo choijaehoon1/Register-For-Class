@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="214.0" prefWidth="300" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="areri.userpage.controller.UserInfoLookController">
+   <children>
+      <HBox alignment="CENTER" layoutX="69.0" layoutY="162.0" prefHeight="38.0" prefWidth="162.0" spacing="20.0">
+         <children>
+            <Button fx:id="complete" mnemonicParsing="false" text="확인" />
+            <Button fx:id="close" mnemonicParsing="false" text="취소" />
+         </children>
+      </HBox>
+      <Label layoutX="60.0" layoutY="21.0" text="회원 정보 조회">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Text layoutX="60.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="비밀번호를 입력해 주세요." textAlignment="CENTER" wrappingWidth="180.00000715255737">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="password" layoutX="71.0" layoutY="118.0" prefHeight="28.0" prefWidth="158.0">
+         <font>
+            <Font name="MS Reference Sans Serif" size="12.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

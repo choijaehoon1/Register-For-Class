@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="340.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="areri.admin.controller.AdminLectureAddController">
+   <children>
+      <GridPane layoutY="81.0" prefHeight="443.0" prefWidth="340.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="강의코드" textAlignment="CENTER" />
+            <Label text="강의명" GridPane.rowIndex="1" />
+            <Label text="교수명" GridPane.rowIndex="2" />
+            <Label text="요일" GridPane.rowIndex="3" />
+            <Label text="수업 시간(시작)" GridPane.rowIndex="4" />
+            <Label text="수업 시간(끝)" GridPane.rowIndex="5" />
+            <Label text="강의실" GridPane.rowIndex="6" />
+            <Label text="신청인원" GridPane.rowIndex="7" />
+            <Label text="강의계획서" GridPane.rowIndex="8" />
+            <Label text="별점합" GridPane.rowIndex="9" />
+            <Label text="별점 누적인원" GridPane.rowIndex="10" />
+            <TextField fx:id="txtlectureCode" prefHeight="23.0" prefWidth="115.0" GridPane.columnIndex="1" />
+            <TextField fx:id="txtlecturName" prefHeight="23.0" prefWidth="115.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtprofessorCode" prefHeight="23.0" prefWidth="115.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ComboBox fx:id="txtlectureDay" prefHeight="23.0" prefWidth="115.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ComboBox fx:id="txtlectureStartTime" prefWidth="115.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="txtlectureEndTime" prefWidth="115.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="txtlectureRoom" prefHeight="23.0" prefWidth="115.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="txtlectureStudent" prefHeight="23.0" prefWidth="115.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="txtlecturePlan" prefHeight="23.0" prefWidth="115.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="txtstarSum" prefHeight="23.0" prefWidth="115.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <TextField fx:id="txtstarPeople" prefHeight="23.0" prefWidth="115.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+         </children>
+      </GridPane>
+      <HBox alignment="CENTER" layoutY="530.0" prefHeight="41.0" prefWidth="340.0" spacing="35.0">
+         <children>
+            <Button fx:id="btnMake" mnemonicParsing="false" text="개설" />
+            <Button fx:id="btnDel" mnemonicParsing="false" text="취소" />
+         </children>
+      </HBox>
+      <ImageView fitHeight="41.0" fitWidth="127.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/login/대학%20로고.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="16.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="강의개설">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
